@@ -611,7 +611,6 @@ ReadTGAFile (const char *filename)
 
     case 11:
       /* RLE compressed 8 or 16 bits grayscale */
-printf("line %d\n", __LINE__);
       if (header.pixel_depth == 8)
 	ReadTGAgray8bitsRLE (fp, texinfo);
       else /* 16 */
